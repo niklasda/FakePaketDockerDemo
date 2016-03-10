@@ -1,1 +1,1 @@
-# FakePaketDockerDemo
+# Fake + Paket + Mono + NUnit + Docker
