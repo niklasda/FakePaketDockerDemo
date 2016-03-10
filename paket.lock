@@ -3,3 +3,4 @@ NUGET
   specs:
     FAKE (4.21.4)
     NUnit (3.2.0)
+    NUnit.ConsoleRunner (3.2.0)

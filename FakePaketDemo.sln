@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeBuiltPaketPowered", "sr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{933EB458-F257-43A9-8F9E-0BE34F17FA78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SomeLogic.Test", "src\test\SomeLogic.Test\SomeLogic.Test.csproj", "{A876BF5C-7C39-4688-BBFF-A82EB4036FEE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SomeLogic.Tests", "src\test\SomeLogic.Test\SomeLogic.Tests.csproj", "{A876BF5C-7C39-4688-BBFF-A82EB4036FEE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SomeLogic", "src\app\SomeLogic\SomeLogic.csproj", "{38AA9CDD-8C80-4DAB-86E3-C2829A8380B3}"
 EndProject
