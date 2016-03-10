@@ -7,8 +7,8 @@
     <ProjectGuid>{DABD9A95-B87A-4F43-8B28-CB873CB6DF47}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ConsoleApplication1</RootNamespace>
-    <AssemblyName>ConsoleApplication1</AssemblyName>
+    <RootNamespace>FakeBuiltPaketPowered</RootNamespace>
+    <AssemblyName>FakeBuiltPaketPowered</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
