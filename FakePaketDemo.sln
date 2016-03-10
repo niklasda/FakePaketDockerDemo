@@ -21,11 +21,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{AF0644
 	ProjectSection(SolutionItems) = preProject
 		.paket\paket.bootstrapper.exe = .paket\paket.bootstrapper.exe
 		paket.dependencies = paket.dependencies
-		paket_install.bat = paket_install.bat
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".fake", ".fake", "{A5530F93-1F6D-4B35-B144-97A005D9C519}"
 	ProjectSection(SolutionItems) = preProject
+		build.bat = build.bat
 		build.fsx = build.fsx
 	EndProjectSection
 EndProject
