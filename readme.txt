@@ -9,3 +9,8 @@ https://docs.docker.com/machine/
 bcdedit /set hypervisorlaunchtype off
 
 bcdedit /set hypervisorlaunchtype auto
+
+
+docker run mono uname -a
+
+docker build -t my-app .

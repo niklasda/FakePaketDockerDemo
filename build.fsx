@@ -10,23 +10,23 @@ let buildDir = "./build/"
 let testDir  = "./test/"
 
 // Targets
-Target "Clean" (fun _ ->
+Target "Clean" (fun f ->
   CleanDirs [buildDir; testDir]
 )
 
-Target "BuildApp" (fun _ ->
+Target "BuildApp" (fun f ->
   !! "src/app/**/*.csproj"
     |> MSBuildRelease buildDir "Build"
     |> Log "AppBuild-Output: "
 )
 
-Target "BuildTest" (fun _ ->
+Target "BuildTest" (fun f ->
   !! "src/test/**/*.csproj"
     |> MSBuildDebug testDir "Build"
     |> Log "TestBuild-Output: "
 )
 
-Target "Test" (fun _ ->
+Target "Test" (fun f ->
  !! (testDir + "/*.Tests.dll")
    |> NUnit3 (fun p ->
      {p with
@@ -34,16 +34,16 @@ Target "Test" (fun _ ->
        Framework = V45 })
 )
 
-Target "Default" (fun _ ->
-  trace "Hello World from FAKE"
+Target "Default" (fun f ->
+  trace "Default target started"
 )
 
 // Dependencies
 "Clean"
   ==> "BuildApp"
-  ==> "BuildTest"
-  ==> "Test"
-  ==> "Default"
+    ==> "BuildTest"
+      ==> "Test"
+        ==> "Default"
 
-// start build
+// Start default build if nothing explicitly specified
 RunTargetOrDefault "Default"
